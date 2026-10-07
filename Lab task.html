@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f5f7;
+            color: #000000;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            margin: 0 0 5px 0;
+            font-size: 28px;
+        }
+        header p {
+            margin: 0 0 20px 0;
+            font-size: 14px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-bottom: 30px;
+            color: #000000;
+            font-size: 22px;
+        }
+        #about-me p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #000000;
+            line-height: 1.6;
+        }
+        .projects-container {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .project-card {
+            display: inline-block;
+            width: 28%;
+            background-color: transparent;
+            padding: 15px;
+            margin: 1%;
+            vertical-align: top;
+            text-align: left;
+            border-top: 1px solid #ccc;
+        }
+        .project-card h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #000000;
+        }
+        .project-card p {
+            font-size: 13px;
+            color: #000000;
+            line-height: 1.4;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #000000;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #020202;
+            font-size: 13px;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            background-color: transparent;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Software Developer | Machine Learning | Systems Programmer</p>
+        <nav>
+            <a href="#about-me">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I am an undergraduate computer engineering student with experience in building varites of programs. I love pizza and i dont mind eating pizza with pineapples in it.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Fine-tuned a pre-trained VGG16 CNN using PyTorch to classify scenes and fruits, achieving over 92% validation accuracy. (my ai course)</p>
+                <a href="#">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Implemented custom C commands for the FOS kernel, handling virtual memory translation, memory reading, and block allocations. (intro to OS)</p>
+                <a href="#">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>Designed a relational SQL database paired with a C# Windows Forms graphical interface for comprehensive hotel management. (intro to database)</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright © 2026 Sai & CO.</p>
+    </footer>
+
+</body>
+</html>
